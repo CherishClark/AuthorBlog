@@ -1,4 +1,14 @@
+<p id="notice"><%= notice %> </p>
 <h1>Ryan holiday is my fav</h1>
+
 <% @blogs.each do |blog| %>
-<div><%= blog.Author</div>
+  <div><%= blog.author %></div>
+  <div><%= blog.title %></div>
+  <div><%= blog.bio %></div>
+  <div><%= image_tag blog.profile_image unless blog.profile_image.nil? %></div>
+  <div><%= blog.age %></div>
+  <div><%= link_to 'Show', blog %> </div>
+  <div><%= link_to 'Edit', edit_blog_path(blog) %> </div>
+  <div><%= link_to 'Delete', blog, method: :delete, data: { confirm: 'Are you sure?'} %> </div>
+<% end %>
 
