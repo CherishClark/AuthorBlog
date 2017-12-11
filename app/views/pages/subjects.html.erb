@@ -4,7 +4,7 @@
 <% @blogs.each do |blog| %>
 <ul>
 
-<%= link_to blog.subject, blog_path(blog) %>
+<%= link_to blog.subject, blog_path(blog) unless blog.subject.nil? %>
 </ul>
 <% end %>
 </div>

@@ -1,1 +1,14 @@
-<h1>yo dawg this i smy show page</h1>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Book</strong>
+  <%= @blog.title %>
+</p>
+
+<p>
+  <strong>Author</strong>
+  <%= @blog.author %>
+</p>
+
+<%= link_to 'Edit', edit_blog_path(@blog) %> |
+<%= link_to 'Back', blogs_path %>

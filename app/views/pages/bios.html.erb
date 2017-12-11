@@ -1,9 +1,11 @@
-<h1>Biographies</h1>
+<h1>Author Biographies</h1>
 <div>
 <% @blogs.each do |blog| %>
 <ul>
-
-<%= link_to blog.bio, blog_path(blog) %>
+  <div>
+    <%= link_to blog.author, blog_path(blog) %>
+    <%= blog.bio unless blog.bio.nil? %>
+  <div>
 </ul>
 <% end %>
 </div>

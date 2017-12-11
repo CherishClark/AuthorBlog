@@ -3,7 +3,7 @@
 <% @blogs.each do |blog| %>
 <ul>
 
-<%= link_to blog.title, blog_path(blog) %>
+<%= link_to blog.author, blog_path(blog) %>
 </ul>
 <% end %>
 </div>

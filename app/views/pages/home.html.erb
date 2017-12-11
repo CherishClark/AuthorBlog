@@ -2,7 +2,7 @@
 
 <div><% @blogs.each do |blog| %>
   <div><%= blog.author %></div>
-  <div><%= image_tag blog.profile_image %></div>
+  <div><%= image_tag blog.profile_image unless blog.profile_image.nil? %></div>
 
 
 <% end %>
