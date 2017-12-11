@@ -1,13 +1,12 @@
 Rails.application.routes.draw do
-  get 'pages/home'
+  
+  get 'titles', to: 'pages#titles'
 
-  get 'pages/titles'
+  get 'authors', to: 'pages#authors'
 
-  get 'pages/authors'
+  get 'subjects', to: 'pages#subjects'
 
-  get 'pages/subjects'
-
-  get 'pages/bios'
+  get 'bios', to: 'pages#bios'
 
   resources :blogs
 

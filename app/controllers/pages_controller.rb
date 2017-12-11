@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
+    before_action :all_blogs, only: [:home, :titles, :authors, :subjects, :bios]
   def home
-    @posts = Blog.all
   end
 
   def titles
@@ -14,4 +14,10 @@ class PagesController < ApplicationController
 
   def bios
   end
+
+  def all_blogs
+    @blogs = Blog.all
+  end
+
 end
+

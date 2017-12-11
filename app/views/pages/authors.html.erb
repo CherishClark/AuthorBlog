@@ -1,2 +1,9 @@
-<h1>Pages#authors</h1>
-<p>Find me in app/views/pages/authors.html.erb</p>
+<h1>Featured Authors</h1>
+<div>
+<% @blogs.each do |blog| %>
+<ul>
+
+<%= link_to blog.title, blog_path(blog) %>
+</ul>
+<% end %>
+</div>

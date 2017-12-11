@@ -1,2 +1,9 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<h1>Home</h1>
+
+<div><% @blogs.each do |blog| %>
+  <div><%= blog.author %></div>
+  <div><%= image_tag blog.profile_image %></div>
+
+
+<% end %>
+</div>

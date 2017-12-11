@@ -5,6 +5,7 @@
     age: "30",
     bio: "lives on a farm with no worries",
     profile_image: "http://via.placeholder.com/350x150",
-    contact: "555-555-555"
+    contact: "555-555-555",
+    subject: "non-fiction"
     )
 end

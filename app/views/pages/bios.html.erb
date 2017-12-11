@@ -1,2 +1,9 @@
-<h1>Pages#bios</h1>
-<p>Find me in app/views/pages/bios.html.erb</p>
+<h1>Biographies</h1>
+<div>
+<% @blogs.each do |blog| %>
+<ul>
+
+<%= link_to blog.bio, blog_path(blog) %>
+</ul>
+<% end %>
+</div>

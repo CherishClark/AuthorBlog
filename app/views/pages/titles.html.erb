@@ -1,2 +1,11 @@
-<h1>Pages#titles</h1>
-<p>Find me in app/views/pages/titles.html.erb</p>
+<h1>Book Titles</h1>
+
+<div>
+<% @blogs.each do |blog| %>
+<ul>
+
+<%= link_to blog.title, blog_path(blog) %>
+</ul>
+<% end %>
+</div>
+
